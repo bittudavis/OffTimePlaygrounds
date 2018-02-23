@@ -1,0 +1,14 @@
+The regex used in here is little bit lengthy. 
+REGEX: ^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$
+
+^ represents the start of the Regex string.
+
+[A-Z0-9a-z._%+-] says it can include anything from capitalised A-Z or lower a-z. It can also include from 0-9 along with special characters like ._%+-. If you think you don't have to allow any of the ones in here, you can remove the same.
+
++@ make sure you got only one occurance of @ in the string.
+
+[A-Za-z0-9.-] represents the same as we discussed but allowing only . and - as special characters.
+
+\\.[A-Za-z]{2,4} makes sure that there is atleast one set of .com or .me or .biz. {2,4} allows string count between 2 to 4.
+
+$ represents the end of the test for string.
